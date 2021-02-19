@@ -65,34 +65,37 @@ export default function TargetUpdate(props) {
 	};
 
 	return (
-		<div class="flexbox-1">
-			<h4>{target.companyName ? target.companyName : ''}</h4>
-			<h4>{target.dateApplied ? target.dateApplied : ''}</h4>
-			<h4>{target.contactName ? target.contactName : ''}</h4>
-			<h4>{target.notes ? target.notes : ''}</h4>
-			<button onClick={handleDelete}>Delete this Target Company</button> <br />
-			<form class="flexbox-2" onSubmit={handleSubmit}>
-				<input
-					type="text"
-					ref={companyNameInput}
-					defaultValue={target.companyName}
-				/>
+		<div class="flexbox-container">
+			<div class="flexbox-1">
+				<h4>{target.companyName ? target.companyName : ''}</h4>
+				<h4>{target.dateApplied ? target.dateApplied : ''}</h4>
+				<h4>{target.contactName ? target.contactName : ''}</h4>
+				<h4>{target.notes ? target.notes : ''}</h4>
+				<button onClick={handleDelete}>Delete this Target Company</button>{' '}
 				<br />
-				<input
-					type="text"
-					ref={dateAppliedInput}
-					defaultValue={target.dateApplied}
-				/>
-				<br />
-				<input
-					type="text"
-					ref={contactNameInput}
-					defaultValue={target.contactName}
-				/>
-				<br />
-				<input type="text" ref={notesInput} defaultValue={target.notes} />
-				<input type="submit" value="Update Target Companies" />
-			</form>
+				<form class="flexbox-2" onSubmit={handleSubmit}>
+					<input
+						type="text"
+						ref={companyNameInput}
+						defaultValue={target.companyName}
+					/>
+					<br />
+					<input
+						type="text"
+						ref={dateAppliedInput}
+						defaultValue={target.dateApplied}
+					/>
+					<br />
+					<input
+						type="text"
+						ref={contactNameInput}
+						defaultValue={target.contactName}
+					/>
+					<br />
+					<input type="text" ref={notesInput} defaultValue={target.notes} />
+					<input type="submit" value="Update Target Companies" />
+				</form>
+			</div>
 		</div>
 	);
 }

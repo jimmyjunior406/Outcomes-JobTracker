@@ -21,17 +21,17 @@ button:hover {
 
 //APP PAGE FLEXBOX
 .flexbox-container {
-  width: 400px;
+  width: 500;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: auto;
 }
 
 .flexbox-itemApp {
-  width: 500px;
-  margin: 10px;
  
+  margin: 10px;
   align-items: center;
   align-content: center;
  
@@ -42,8 +42,8 @@ button {
   height: 60px;
 }
 .title {
-  
-  width: 500px;
+  text-align: center;
+  width: 300px;
   height: px;
   color: white;
   margin-top: 20px;
@@ -53,24 +53,25 @@ button {
 }
 
 .flexbox-1 {
+  width: 200px;
+  height: 200px;
   background-color: white;
   color: black;
-  justify-content: center;
-  align-content: center;
-  padding: 7px;
+  text-align: center;
+  padding-top: 25px;
   margin-bottom: 50px;
-
+  background-color: lightgrey;
+  border-radius: 8%;
 }
 
 .flexbox-2 {
-
+  width: 300px;
   background-color: white;
   color: black;
-  justify-content: center;
-  align-content: center;
-  padding: 7px;
+  padding: 50px;
   margin: 5px 5px 5px 5px;
-
+  background-color: lightgrey;
+  border-radius: 8%;
 }
 
 flexbox-app-3 {

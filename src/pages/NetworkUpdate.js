@@ -65,37 +65,39 @@ export default function NetworkUpdate(props) {
 	};
 
 	return (
-		<div class="flexbox-1">
-			<h4>{network.companyName ? network.companyName : ''}</h4>
-			<h4>{network.dateApplied ? network.dateApplied : ''}</h4>
-			<h4>{network.contactName ? network.contactName : ''}</h4>
-			<h4>{network.notes ? network.notes : ''}</h4>
-			<button onClick={handleDelete}>
-				Delete this Network/Connection
-			</button>{' '}
-			<br />
-			<form class="flexbox-2" onSubmit={handleSubmit}>
-				<input
-					type="text"
-					ref={companyNameInput}
-					defaultValue={network.companyName}
-				/>
+		<div class="flexbox-container">
+			<div class="flexbox-1">
+				<h4>{network.companyName ? network.companyName : ''}</h4>
+				<h4>{network.dateApplied ? network.dateApplied : ''}</h4>
+				<h4>{network.contactName ? network.contactName : ''}</h4>
+				<h4>{network.notes ? network.notes : ''}</h4>
+				<button onClick={handleDelete}>
+					Delete this Network/Connection
+				</button>{' '}
 				<br />
-				<input
-					type="text"
-					ref={dateAppliedInput}
-					defaultValue={network.dateApplied}
-				/>
-				<br />
-				<input
-					type="text"
-					ref={contactNameInput}
-					defaultValue={network.contactName}
-				/>
-				<br />
-				<input type="text" ref={notesInput} defaultValue={network.notes} />
-				<input type="submit" value="Update Networks/Connections" />
-			</form>
+				<form class="flexbox-2" onSubmit={handleSubmit}>
+					<input
+						type="text"
+						ref={companyNameInput}
+						defaultValue={network.companyName}
+					/>
+					<br />
+					<input
+						type="text"
+						ref={dateAppliedInput}
+						defaultValue={network.dateApplied}
+					/>
+					<br />
+					<input
+						type="text"
+						ref={contactNameInput}
+						defaultValue={network.contactName}
+					/>
+					<br />
+					<input type="text" ref={notesInput} defaultValue={network.notes} />
+					<input type="submit" value="Update Networks/Connections" />
+				</form>
+			</div>
 		</div>
 	);
 }

@@ -65,34 +65,36 @@ export default function JobUpdate(props) {
 	};
 
 	return (
-		<div class="flexbox-1">
-			<h4>{job.companyName ? job.companyName : ''}</h4>
-			<h4>{job.dateApplied ? job.dateApplied : ''}</h4>
-			<h4>{job.contactName ? job.contactName : ''}</h4>
-			<h4>{job.notes ? job.notes : ''}</h4>
-			<button onClick={handleDelete}>Delete this Job</button> <br />
-			<form class="flexbox-2" onSubmit={handleSubmit}>
-				<input
-					type="text"
-					ref={companyNameInput}
-					defaultValue={job.companyName}
-				/>
-				<br />
-				<input
-					type="text"
-					ref={dateAppliedInput}
-					defaultValue={job.dateApplied}
-				/>
-				<br />
-				<input
-					type="text"
-					ref={contactNameInput}
-					defaultValue={job.contactName}
-				/>
-				<br />
-				<input type="text" ref={notesInput} defaultValue={job.notes} />
-				<input type="submit" value="Update Job" />
-			</form>
+		<div class="flexbox-container">
+			<div class="flexbox-1">
+				<h4>{job.companyName ? job.companyName : ''}</h4>
+				<h4>{job.dateApplied ? job.dateApplied : ''}</h4>
+				<h4>{job.contactName ? job.contactName : ''}</h4>
+				<h4>{job.notes ? job.notes : ''}</h4>
+				<button onClick={handleDelete}>Delete this Job</button> <br />
+				<form class="flexbox-2" onSubmit={handleSubmit}>
+					<input
+						type="text"
+						ref={companyNameInput}
+						defaultValue={job.companyName}
+					/>
+					<br />
+					<input
+						type="text"
+						ref={dateAppliedInput}
+						defaultValue={job.dateApplied}
+					/>
+					<br />
+					<input
+						type="text"
+						ref={contactNameInput}
+						defaultValue={job.contactName}
+					/>
+					<br />
+					<input type="text" ref={notesInput} defaultValue={job.notes} />
+					<input type="submit" value="Update Job" />
+				</form>
+			</div>
 		</div>
 	);
 }
