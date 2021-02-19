@@ -49,16 +49,17 @@ export default function Targets(props) {
 	};
 	return (
 		<div class="flexbox-container">
-			<div class="flexbox-item flexbox-2">
+			<div class="title">
 				<h1>Target Companies</h1>
-				<div id="button">
-					<Link to="/App">
-						<button className="Button" type="button">
-							Home
-						</button>
-					</Link>
-				</div>
-				<div class="flexbox-item flexbox-1">
+					<div id="button">
+						<Link to="/App">
+							<button className="Button" type="button">
+									Home
+							</button>
+						</Link>
+					</div>
+			</div>
+			<div class="flexbox-item flexbox-1">
 					<form onSubmit={handleSubmit}>
 						<input
 							type="text"
@@ -99,7 +100,6 @@ export default function Targets(props) {
 						);
 					})}
 				</div>
-			</div>
 		</div>
 	);
 }
