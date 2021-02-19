@@ -5,8 +5,6 @@ const jobSchema = new Schema({
     dateApplied: String,
     contactName: String,
     notes: String,
-}, {
-    timestamps: true
 })
 
 const Job = model('Job', jobSchema)

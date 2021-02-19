@@ -22,13 +22,7 @@ if (process.env.NODE_ENV !== 'development'){
 }
 
 /* Controller Goes Here Remove the tes*/
-app.get('/test', (req, res)=>{
-	res.status(200).json({
-		website: 'My Website',
-		info: 'Not that much'
-	})
-})
-app.use(/\.[0-9a-z]+$/i, express.static('public'));
+
 app.use('/api/jobs', require('./controllers/jobs'));
 app.use('/api/networks', require('./controllers/networks'));
 app.use('/api/targets', require('./controllers/targets'));

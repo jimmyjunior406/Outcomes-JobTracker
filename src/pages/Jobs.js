@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Jobs(props) {
 	const [jobs, setJobs] = useState([]);
@@ -18,7 +19,6 @@ export default function Jobs(props) {
 			}
 		})();
 	}, []);
-
 	const handleSubmit = async e => {
 		e.preventDefault();
 		const companyNameValue = companyNameInput.current.value;
@@ -42,29 +42,28 @@ export default function Jobs(props) {
 			setJobs([...jobs, data]);
 		} catch (error) {
 			console.error(error);
+		} finally {
+			window.location.assign('/Jobs');
 		}
 	};
-
 	return (
-		<div className="Input">
-			<h1>Jobs Applied To</h1>
-
-			<div>
-				{jobs.map(job => {
-					return (
-						<div>
-							<h2>{job.companyName}</h2>
-							<h2>{job.dateApplied}</h2>
-							<h2>{job.contactName}</h2>
-							<h2>{job.notes}</h2>
-						</div>
-					);
-				})}
+		<div class="flexbox-container">
+			<div class="title">
+				<h1>Job Applications</h1>
+				<div id="button">
+					<Link to="/App">
+						<button className="Button" type="button">
+							Home
+						</button>
+					</Link>
+				</div>
+			</div>
+			<div class="flexbox-item flexbox-1">
 				<form onSubmit={handleSubmit}>
 					<input
 						type="text"
-						ref={contactNameInput}
-						placeholder="Contact Name"
+						ref={companyNameInput}
+						placeholder="Company Name"
 					/>
 					<br />
 					<input
@@ -73,17 +72,31 @@ export default function Jobs(props) {
 						placeholder="Date Applied"
 					/>
 					<br />
-					<input
-						type="text"
-						ref={contactNameInput}
-						placeholder="Contact Name"
-					/>
+					<input type="text" ref={contactNameInput} placeholder="Contact Nme" />
 					<br />
 					<input type="text" ref={notesInput} placeholder="Notes" />
 					<br />
-					<input type="submit" value="Add New Job Applied" />
+					<input type="submit" value="Add New Job" />
 				</form>
 			</div>
+
+			{jobs.map(job => {
+				return (
+					<div class="flexbox-item flexbox-2">
+						<div key={job._id}>
+							<h4>{job.companyName}</h4>
+							<h6>Date Applied: {job.dateApplied}</h6>
+							<h6>Contact Name: {job.contactName}</h6>
+							<h6>Notes: {job.notes}</h6>
+							<Link to={`/${job._id}/jobEdit`}>
+								<button className="Button" type="button">
+									Update Job
+								</button>
+							</Link>
+						</div>
+					</div>
+				);
+			})}
 		</div>
 	);
 }

@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import routes from './routes';
-const AppRouter = () => {
+
+const AppRouter = props => {
 	return (
 		<Router>
 			<Switch>
@@ -9,7 +10,7 @@ const AppRouter = () => {
 					<Route
 						key={key}
 						path={path}
-						component={() => <Component page={key} />}
+						component={props => <Component {...props} page={key} />}
 					></Route>
 				))}
 			</Switch>

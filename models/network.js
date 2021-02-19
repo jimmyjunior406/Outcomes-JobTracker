@@ -1,11 +1,10 @@
 const { Schema, model } = require('mongoose');
 
 const networkSchema = new Schema({
-    name: String,
-    company: String,
-    notes: String
-}, {
-    timestamps: true
+    companyName: String,
+    dateApplied: String,
+    contactName: String,
+    notes: String,
 })
 
 const Network = model('Network', networkSchema)

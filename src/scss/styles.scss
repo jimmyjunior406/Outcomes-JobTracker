@@ -1,38 +1,103 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import "reset";
 @import "grid";
 
 body {
   
-  background-image: url('https://i.imgur.com/WKY2mgy.png');
+  background-image: url('https://i.imgur.com/AA4z78D.jpg');
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right 120%  top 40%;
+  background-size: 100% 140% ;
+  background-attachment: fixed;
+  
+
+
+}
+button:hover {
+  background: #e5432d;
+  box-shadow: 4px 4px 1px 1px #eee5e5;
+  color: white;
   
 }
 
-div {
-  text-align: right;
-  margin: 50px;
+//APP PAGE FLEXBOX
+.flexbox-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
-.mainButton {
 
-    
-    border-style: solid;
-    border-top-right-radius: 50%;
-    
-}
-button:hover{
-  background-color: #e5432d;
-}
-.networksButton {
-  button:hover { 
-    background-color: #e5432d;
-
-  }
-}
-.Form {
+.flexbox-itemApp {
+  width: 500px;
   margin: 10px;
+ 
+  align-items: center;
+  align-content: center;
+ 
+}
+
+button {
+  width: 200px;
+  height: 60px;
+}
+.title {
+  
+  width: 500px;
+  height: px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  
+
+}
+
+.flexbox-1 {
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-content: center;
+  padding: 7px;
+  margin-bottom: 50px;
+
+}
+
+.flexbox-2 {
+
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-content: center;
+  padding: 7px;
+  margin: 5px 5px 5px 5px;
+
+}
+
+flexbox-app-3 {
+
 }
 
 
+
+
+// .postContainer {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-items: center;
+
+// }
+
+
+
+// .Form {
+//   padding-left: 100 px;
+//   max-width: 100px;
+  
+// }
+
+// div {
+//   text-align: center;
+//   margin: 50px;
+
+// }

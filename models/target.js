@@ -2,10 +2,9 @@ const { Schema, model } = require('mongoose');
 
 const targetSchema = new Schema({
     companyName: String,
+    dateApplied: String,
     contactName: String,
-    notes: String
-}, {
-    timestamps: true
+    notes: String,
 })
 
 const Target = model('Target', targetSchema)
