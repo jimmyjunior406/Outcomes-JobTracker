@@ -1,68 +1,30 @@
-# Big Poppa Code React Starter Kit
-This Starter Kit is being created for New Web Developers that want to get started with react
+# Outcomes Job-Tracker
+https://outcomes-job-tracker.herokuapp.com/
+<h1> Concept:
+<h3> After leaving General Assembly, searching for a job will be the next step.  This app allows you to track the jobs you have applied, the networks and
+<h3> you have made along the way, and also any future target companies you might have your eyes on to apply to in the future.
+<h1> Technologies Used:
+<h3> React Router
+<h3> Express
+<h3> MongoDB
+<h3> Heroku
 
-Most people use a CLI Tool like Vue-Cli or Create React App and no idea what these things are doing
+<h1>Approach:
+<h3> I wanted to make something simple and easy to use. Practical and not confusing.  
 
-The goal of this is for it to be a tool that let's you learn JS at a new level because you have access to
-everything under the hood and no opinionated set up
+<h1>Development Plan
+<h3> Figure out how to make the three different pages be seperate from eachother.
+<h3> Make sure the routes worked. 
+<h3>Learn flexbox in a few days to be able to employ it properly in my App
 
-I will base all my tutorials on this Starter Kit.
-
-# Who Am I?
-
-![arthurbernierjr.com](http://progressandfortune.com/smac_images/profile.jpg)
-
-I am Arthur Bernier Jr. I work as freelance fullstack web developer and attraction marketing consultant specializing in supporting e-commerce brands,
-subscription box sites, social activists, religious/non-profit leaders and creative entrepreneurs(i.e. barbers, artists, musicians, stylists, models and photographers).
-I have a passion for helping entrepreneurs reach their perfect audience and helping you communicate to that audience in a way that makes them know, like and trust you. I also am a Full-Time Instructor at General Assembly as well as a Software Engineer at Blavity Inc.
+<h1>MVP
+<h3> React Router
+<h3> 3 different Models
 
 
-# My Favorite Online Instructors
+<h1>Stretch Goals
+<h3> I HAD to learn more flexbox in order to make this functional.
+<h3> I want to add more to this. Make it look better and neater and more useful
 
-[__Colt Steele__](https://www.youtube.com/channel/UCrqAGUPPMOdo0jfQ6grikZw)
-
-[__Brad Traversy__](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
-
-[__Jose Santos Garcia__](https://www.youtube.com/channel/UC46wWUso9H5KPQcoL9iE3Ug)
-
-[__Stephen Grider__](https://www.youtube.com/channel/UCQCaS3atWyNHEy5PkDXdpNg/)
-
-## Steps
-
-**Install Gulp Globally**
-```bash
-npm i -g gulp-cli
-```
-
-**Start the dev server**
-```bash
-npm run dev
-```
-### or
-```bash
-yarn dev
-```
-
-**Start the dev server with proxy**
-```bash
-npm run proxy
-```
-
-**Build files for production**
-```bash
-yarn build
-```
-### or
-
-```bash
-npm run build
-```
-
-**Deploy for production script**
-```bash
-npm start
-```
-### or
-```bash
-yarn start
-```
+<h1>Challenges
+<h3> Syntax, Syntax, Syntax.... Way too many small errors stopped me from getting ahead in a timely manner. I had slowed down my typing and paid more attention to what I was trying to do, I could have possibly saved myself over five hours of troubleshooting.
