@@ -4,6 +4,9 @@ https://outcomes-job-tracker.herokuapp.com/
 <h3> After leaving General Assembly, searching for a job will be the next step.  This app allows you to track the jobs you have applied, the networks and
 <h3> connections you have made along the way, and also any future target companies you might have your eyes on to apply to in the future.
 <h1> Technologies Used:
+<h3> HTML
+<h3> JavaScript
+<h3> SCSS
 <h3> React Router
 <h3> Express
 <h3> MongoDB
