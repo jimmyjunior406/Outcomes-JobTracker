@@ -27,4 +27,4 @@ https://outcomes-job-tracker.herokuapp.com/
 <h3> I want to add more to this. Make it look better and neater and more useful
 
 <h1>Challenges
-<h3> Syntax, Syntax, Syntax.... Way too many small errors stopped me from getting ahead in a timely manner. I had slowed down my typing and paid more attention to what I was trying to do, I could have possibly saved myself over five hours of troubleshooting.
+<h3> Syntax, Syntax, Syntax.... Way too many small errors stopped me from getting ahead in a timely manner. If I had slowed down my typing and paid more attention to what I was trying to do, I could have possibly saved myself over five hours of troubleshooting.
