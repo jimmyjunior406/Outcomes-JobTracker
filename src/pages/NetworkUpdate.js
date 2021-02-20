@@ -68,7 +68,6 @@ export default function NetworkUpdate(props) {
 		<div class="flexbox-container">
 			<div class="flexbox-1">
 				<h4>{network.companyName ? network.companyName : ''}</h4>
-				<h4>{network.dateApplied ? network.dateApplied : ''}</h4>
 				<h4>{network.contactName ? network.contactName : ''}</h4>
 				<h4>{network.notes ? network.notes : ''}</h4>
 				<button onClick={handleDelete}>
@@ -80,12 +79,6 @@ export default function NetworkUpdate(props) {
 						type="text"
 						ref={companyNameInput}
 						defaultValue={network.companyName}
-					/>
-					<br />
-					<input
-						type="text"
-						ref={dateAppliedInput}
-						defaultValue={network.dateApplied}
 					/>
 					<br />
 					<input

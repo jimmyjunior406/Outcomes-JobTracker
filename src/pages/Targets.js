@@ -73,7 +73,11 @@ export default function Targets(props) {
 						placeholder="Date Applied"
 					/>
 					<br />
-					<input type="text" ref={contactNameInput} placeholder="Contact Nme" />
+					<input
+						type="text"
+						ref={contactNameInput}
+						placeholder="Contact Name"
+					/>
 					<br />
 					<input type="text" ref={notesInput} placeholder="Notes" />
 					<br />
