@@ -65,14 +65,14 @@ export default function JobUpdate(props) {
 	};
 
 	return (
-		<div class="flexbox-container">
+		<div class="flexbox-container1">
 			<div class="flexbox-1">
 				<h4>{job.companyName ? job.companyName : ''}</h4>
 				<h4>{job.dateApplied ? job.dateApplied : ''}</h4>
 				<h4>{job.contactName ? job.contactName : ''}</h4>
 				<h4>{job.notes ? job.notes : ''}</h4>
 				<button onClick={handleDelete}>Delete this Job</button> <br />
-				<form class="flexbox-2" onSubmit={handleSubmit}>
+				<form class="flexbox-1" onSubmit={handleSubmit}>
 					<input
 						type="text"
 						ref={companyNameInput}

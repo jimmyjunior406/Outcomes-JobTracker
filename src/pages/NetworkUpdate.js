@@ -65,7 +65,7 @@ export default function NetworkUpdate(props) {
 	};
 
 	return (
-		<div class="flexbox-container">
+		<div class="flexbox-container1">
 			<div class="flexbox-1">
 				<h4>{network.companyName ? network.companyName : ''}</h4>
 				<h4>{network.contactName ? network.contactName : ''}</h4>
@@ -74,7 +74,7 @@ export default function NetworkUpdate(props) {
 					Delete this Network/Connection
 				</button>{' '}
 				<br />
-				<form class="flexbox-2" onSubmit={handleSubmit}>
+				<form class="flexbox-1" onSubmit={handleSubmit}>
 					<input
 						type="text"
 						ref={companyNameInput}
@@ -88,7 +88,7 @@ export default function NetworkUpdate(props) {
 					/>
 					<br />
 					<input type="text" ref={notesInput} defaultValue={network.notes} />
-					<input type="submit" value="Update Networks/Connections" />
+					<input type="submit" value="Update Networks" />
 				</form>
 			</div>
 		</div>

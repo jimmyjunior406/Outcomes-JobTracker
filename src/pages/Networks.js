@@ -43,8 +43,8 @@ export default function Networks(props) {
 		}
 	};
 	return (
-		<div class="flexbox-container">
-			<div class="title">
+		<div>
+			<div class="title1">
 				<h1>Networks and Connections</h1>
 				<div id="button">
 					<Link to="/App">
@@ -53,27 +53,28 @@ export default function Networks(props) {
 						</button>
 					</Link>
 				</div>
+				<div class="form">
+					<form onSubmit={handleSubmit}>
+						<input
+							type="text"
+							ref={contactNameInput}
+							placeholder="Contact Name"
+						/>
+						<br />
+						<input
+							type="text"
+							ref={companyNameInput}
+							placeholder="Company Name"
+						/>
+						<br />
+						<input type="text" ref={notesInput} placeholder="Notes" />
+						<br />
+						<input type="submit" value="Add Network/Connection" />
+					</form>
+				</div>
 			</div>
-			<div class="flexbox-item flexbox-1">
-				<form onSubmit={handleSubmit}>
-					<input
-						type="text"
-						ref={contactNameInput}
-						placeholder="Contact Name"
-					/>
-					<br />
-					<input
-						type="text"
-						ref={companyNameInput}
-						placeholder="Company Name"
-					/>
-					<br />
-					<input type="text" ref={notesInput} placeholder="Notes" />
-					<br />
-					<input type="submit" value="Add Network/Connection" />
-				</form>
-			</div>
-			<div>
+
+			<div class="flexbox-container1">
 				{networks.map(network => {
 					return (
 						<div class="flexbox-item flexbox-2">

@@ -48,7 +48,7 @@ export default function Targets(props) {
 		}
 	};
 	return (
-		<div class="flexbox-container">
+		<div>
 			<div class="title">
 				<h1>Target Companies</h1>
 				<div id="button">
@@ -58,49 +58,50 @@ export default function Targets(props) {
 						</button>
 					</Link>
 				</div>
+				<div class="form">
+					<form onSubmit={handleSubmit}>
+						<input
+							type="text"
+							ref={companyNameInput}
+							placeholder="Company Name"
+						/>
+						<br />
+						<input
+							type="text"
+							ref={dateAppliedInput}
+							placeholder="Date Applied"
+						/>
+						<br />
+						<input
+							type="text"
+							ref={contactNameInput}
+							placeholder="Contact Name"
+						/>
+						<br />
+						<input type="text" ref={notesInput} placeholder="Notes" />
+						<br />
+						<input type="submit" value="Add New Target" />
+					</form>
+				</div>
 			</div>
-			<div class="flexbox-item flexbox-1">
-				<form onSubmit={handleSubmit}>
-					<input
-						type="text"
-						ref={companyNameInput}
-						placeholder="Company Name"
-					/>
-					<br />
-					<input
-						type="text"
-						ref={dateAppliedInput}
-						placeholder="Date Applied"
-					/>
-					<br />
-					<input
-						type="text"
-						ref={contactNameInput}
-						placeholder="Contact Name"
-					/>
-					<br />
-					<input type="text" ref={notesInput} placeholder="Notes" />
-					<br />
-					<input type="submit" value="Add New Target" />
-				</form>
-			</div>
-
-			{targets.map(target => {
-				return (
-					<div class="flexbox-item flexbox-2">
-						<div key={target._id}>
-							<h4>{target.companyName}</h4>
-							<h6>Contact Name: {target.contactName}</h6>
-							<h6>Notes: {target.notes}</h6>
-							<Link to={`/${target._id}/targetEdit`}>
-								<button className="Button" type="button">
-									Update Target
-								</button>
-							</Link>
+			<div class="flexbox-container1">
+				{targets.map(target => {
+					return (
+						<div class="flexbox-2">
+							<div key={target._id}>
+								<h4>{target.companyName}</h4>
+								<h6>Contact Name: {target.contactName}</h6>
+								<h6>Notes: {target.notes}</h6>
+								<Link to={`/${target._id}/targetEdit`}>
+									<button className="Button" type="button">
+										Update Target
+									</button>
+								</Link>
+							</div>
 						</div>
-					</div>
-				);
-			})}
+					);
+				})}
+			</div>
 		</div>
 	);
 }

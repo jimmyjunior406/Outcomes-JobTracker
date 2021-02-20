@@ -65,7 +65,7 @@ export default function TargetUpdate(props) {
 	};
 
 	return (
-		<div class="flexbox-container">
+		<div class="flexbox-container1">
 			<div class="flexbox-1">
 				<h4>{target.companyName ? target.companyName : ''}</h4>
 				<h4>{target.dateApplied ? target.dateApplied : ''}</h4>
@@ -73,7 +73,7 @@ export default function TargetUpdate(props) {
 				<h4>{target.notes ? target.notes : ''}</h4>
 				<button onClick={handleDelete}>Delete this Target Company</button>{' '}
 				<br />
-				<form class="flexbox-2" onSubmit={handleSubmit}>
+				<form class="flexbox-1" onSubmit={handleSubmit}>
 					<input
 						type="text"
 						ref={companyNameInput}
